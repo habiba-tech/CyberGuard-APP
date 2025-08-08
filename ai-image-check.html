@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Check - CyberGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛡️</span>
+                <span class="brand-text">CyberGuard</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="text-abuse.html" class="nav-link">Text Scan</a>
+                <a href="phishing-detection.html" class="nav-link">Phishing</a>
+                <a href="ai-image-check.html" class="nav-link active">AI Image</a>
+                <a href="email-breach.html" class="nav-link">Breach Check</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">🖼️ AI Image Detection</h1>
+            <p class="page-subtitle">Detect AI-generated or manipulated images</p>
+        </div>
+
+        <div class="scan-container">
+            <div class="input-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📷</div>
+                    <p class="upload-text">Click to upload an image or drag & drop</p>
+                    <p class="upload-subtext">Supports JPG, PNG, GIF (max 10MB)</p>
+                    <input type="file" id="imageInput" accept="image/*" class="file-input">
+                </div>
+                
+                <div class="image-preview" id="imagePreview">
+                    <img id="previewImage" alt="Preview">
+                    <button class="remove-image" id="removeImage">✕</button>
+                </div>
+                
+                <button id="scanButton" class="scan-button" disabled>
+                    <span class="button-text">Analyze Image</span>
+                    <span class="button-icon">🔍</span>
+                </button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <div class="loading-spinner" id="loadingSpinner">
+                    <div class="spinner"></div>
+                    <p>Analyzing image...</p>
+                </div>
+                
+                <div class="results-content" id="resultsContent">
+                    <h3 class="results-title">AI Detection Results</h3>
+                    <div class="authenticity-result" id="authenticityResult">
+                        <div class="result-indicator" id="resultIndicator">
+                            <span class="result-icon" id="resultIcon">✅</span>
+                            <span class="result-text" id="resultText">AUTHENTIC</span>
+                        </div>
+                        <div class="confidence-score" id="confidenceScore">
+                            <span class="confidence-label">Confidence:</span>
+                            <span class="confidence-value" id="confidenceValue">85%</span>
+                        </div>
+                    </div>
+                    <div class="analysis-details" id="analysisDetails">
+                        <h4>Analysis Details:</h4>
+                        <ul id="detailsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="ai-image-check.js"></script>
+</body>
+</html>

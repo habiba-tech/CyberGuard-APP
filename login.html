@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CyberGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="login-brand">
+                    <span class="brand-icon">🛡️</span>
+                    <span class="brand-text">CyberGuard</span>
+                </div>
+                <h1 class="login-title">Welcome Back</h1>
+                <p class="login-subtitle">Sign in to access your security dashboard</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="your.email@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="password-input-container">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input" 
+                            placeholder="Enter your password"
+                            required
+                        >
+                        <button type="button" class="password-toggle" id="passwordToggle">
+                            <span class="toggle-icon">👁️</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-button" id="loginButton">
+                    <span class="button-text">Sign In</span>
+                    <span class="button-icon">🔐</span>
+                </button>
+
+                <div class="demo-credentials">
+                    <p class="demo-title">Demo Credentials:</p>
+                    <p class="demo-info">Email: demo@cyberguard.com</p>
+                    <p class="demo-info">Password: CyberGuard2025!</p>
+                </div>
+            </form>
+
+            <div class="login-footer">
+                <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+            </div>
+        </div>
+
+        <div class="login-features">
+            <h3 class="features-title">Protect Your Digital World</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="feature-icon">🔍</span>
+                    <div class="feature-content">
+                        <h4>Text Abuse Detection</h4>
+                        <p>Advanced AI-powered toxicity analysis</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎣</span>
+                    <div class="feature-content">
+                        <h4>Phishing Protection</h4>
+                        <p>Real-time email and URL threat detection</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🖼️</span>
+                    <div class="feature-content">
+                        <h4>AI Image Verification</h4>
+                        <p>Detect deepfakes and manipulated content</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📧</span>
+                    <div class="feature-content">
+                        <h4>Breach Monitoring</h4>
+                        <p>Check if your data has been compromised</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
