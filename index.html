@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Detection App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛡️</span>
+                <span class="brand-text">CyberGuard</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="text-abuse.html" class="nav-link">Text Scan</a>
+                <a href="phishing-detection.html" class="nav-link">Phishing</a>
+                <a href="ai-image-check.html" class="nav-link">AI Image</a>
+                <a href="email-breach.html" class="nav-link">Breach Check</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <h1 class="hero-title">Cybersecurity Detection App</h1>
+            <p class="hero-subtitle">Protect yourself with our comprehensive security tools</p>
+        </div>
+
+        <div class="tools-grid">
+            <div class="tool-card" data-tool="text-abuse">
+                <div class="tool-icon">🔍</div>
+                <h3 class="tool-title">Text Abuse Scan</h3>
+                <p class="tool-description">Analyze text content for toxicity, harassment, and inappropriate language</p>
+                <button class="tool-button" onclick="navigateToTool('text-abuse.html')">
+                    Start Scan
+                    <span class="button-arrow">→</span>
+                </button>
+            </div>
+
+            <div class="tool-card" data-tool="phishing">
+                <div class="tool-icon">🎣</div>
+                <h3 class="tool-title">Phishing Email/URL Scan</h3>
+                <p class="tool-description">Check emails and URLs for potential phishing attempts and malicious content</p>
+                <button class="tool-button" onclick="navigateToTool('phishing-detection.html')">
+                    Start Scan
+                    <span class="button-arrow">→</span>
+                </button>
+            </div>
+
+            <div class="tool-card" data-tool="ai-image">
+                <div class="tool-icon">🖼️</div>
+                <h3 class="tool-title">AI Image Check</h3>
+                <p class="tool-description">Detect AI-generated or manipulated images using advanced algorithms</p>
+                <button class="tool-button" onclick="navigateToTool('ai-image-check.html')">
+                    Start Scan
+                    <span class="button-arrow">→</span>
+                </button>
+            </div>
+
+            <div class="tool-card" data-tool="email-breach">
+                <div class="tool-icon">📧</div>
+                <h3 class="tool-title">Email Breach Check</h3>
+                <p class="tool-description">Check if your email has been compromised in known data breaches</p>
+                <button class="tool-button" onclick="navigateToTool('email-breach.html')">
+                    Start Scan
+                    <span class="button-arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 CyberGuard. Protecting your digital world.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
