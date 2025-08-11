@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Breach Check - CyberGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛡️</span>
+                <span class="brand-text">CyberGuard</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="text-abuse.html" class="nav-link">Text Scan</a>
+                <a href="phishing-detection.html" class="nav-link">Phishing</a>
+                <a href="ai-image-check.html" class="nav-link">AI Image</a>
+                <a href="email-breach.html" class="nav-link active">Breach Check</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">📧 Email Breach Check</h1>
+            <p class="page-subtitle">Check if your email has been compromised in known data breaches</p>
+        </div>
+
+        <div class="scan-container">
+            <div class="input-section">
+                <label for="emailInput" class="input-label">Enter email address:</label>
+                <input 
+                    type="email" 
+                    id="emailInput" 
+                    class="email-input" 
+                    placeholder="your.email@example.com"
+                >
+                <button id="scanButton" class="scan-button">
+                    <span class="button-text">Check for Breaches</span>
+                    <span class="button-icon">🔍</span>
+                </button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <div class="loading-spinner" id="loadingSpinner">
+                    <div class="spinner"></div>
+                    <p>Checking breach databases...</p>
+                </div>
+                
+                <div class="results-content" id="resultsContent">
+                    <h3 class="results-title">Breach Check Results</h3>
+                    <div class="breach-status" id="breachStatus">
+                        <div class="status-indicator" id="statusIndicator">
+                            <span class="status-icon" id="statusIcon">✅</span>
+                            <span class="status-text" id="statusText">No breaches found</span>
+                        </div>
+                    </div>
+                    <div class="breach-list" id="breachList">
+                        <h4>Breaches Found:</h4>
+                        <div class="breach-items" id="breachItems"></div>
+                    </div>
+                    <div class="recommendations" id="recommendations">
+                        <h4>Security Recommendations:</h4>
+                        <ul id="recommendationsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="email-breach.js"></script>
+</body>
+</html>
