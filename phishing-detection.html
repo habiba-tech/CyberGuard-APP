@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection - CyberGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛡️</span>
+                <span class="brand-text">CyberGuard</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="text-abuse.html" class="nav-link">Text Scan</a>
+                <a href="phishing-detection.html" class="nav-link active">Phishing</a>
+                <a href="ai-image-check.html" class="nav-link">AI Image</a>
+                <a href="email-breach.html" class="nav-link">Breach Check</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">🎣 Phishing Detection</h1>
+            <p class="page-subtitle">Check emails and URLs for potential phishing attempts</p>
+        </div>
+
+        <div class="scan-container">
+            <div class="input-section">
+                <div class="input-tabs">
+                    <button class="tab-button active" data-tab="email">Email Content</button>
+                    <button class="tab-button" data-tab="url">URL</button>
+                </div>
+                
+                <div class="tab-content active" id="emailTab">
+                    <label for="emailInput" class="input-label">Paste email content:</label>
+                    <textarea 
+                        id="emailInput" 
+                        class="text-input" 
+                        placeholder="Paste the suspicious email content here..."
+                        rows="8"
+                    ></textarea>
+                </div>
+                
+                <div class="tab-content" id="urlTab">
+                    <label for="urlInput" class="input-label">Enter URL to check:</label>
+                    <input 
+                        type="url" 
+                        id="urlInput" 
+                        class="url-input" 
+                        placeholder="https://example.com"
+                    >
+                </div>
+                
+                <button id="scanButton" class="scan-button">
+                    <span class="button-text">Scan for Phishing</span>
+                    <span class="button-icon">🔍</span>
+                </button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <div class="loading-spinner" id="loadingSpinner">
+                    <div class="spinner"></div>
+                    <p>Analyzing for phishing...</p>
+                </div>
+                
+                <div class="results-content" id="resultsContent">
+                    <h3 class="results-title">Phishing Analysis Results</h3>
+                    <div class="risk-level" id="riskLevel">
+                        <div class="risk-indicator" id="riskIndicator">
+                            <span class="risk-icon" id="riskIcon">✅</span>
+                            <span class="risk-text" id="riskText">LOW RISK</span>
+                        </div>
+                    </div>
+                    <div class="warning-details" id="warningDetails">
+                        <h4>Warning Signs Detected:</h4>
+                        <ul id="warningList"></ul>
+                    </div>
+                    <div class="recommendations" id="recommendations">
+                        <h4>Recommendations:</h4>
+                        <ul id="recommendationsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="phishing-detection.js"></script>
+</body>
+</html>
