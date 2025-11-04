@@ -116,12 +116,9 @@ open index.html
 🛡️ Real-world enterprise prototypes for content filtering
 
 
-
----
-
 🏆 Recognition
 
-🥇 Featured in University Cybersecurity Showcase
+🥇 Featured in University Cybersecurity 
 
 🧠 Recognized for Educational & Privacy Innovation
 
@@ -131,14 +128,7 @@ open index.html
 
 If you found Cyber Guard App useful, please star ⭐ the repository to help others discover it!
 
-
----
-
-> Cyber Guard App – Protecting Users. Preserving Privacy. Preventing Threats. 🛡️
-
-
-
----
+> Cyber Guard App – Protecting Users. Preserving Privacy. Preventing Thre
 
 ### 🔖 GitHub “About” Description  
 > **Cyber Guard App | AI-Powered Cybersecurity Platform using NLP + Computer Vision for Abuse, Phishing & Deepfake Detection.*
