@@ -100,8 +100,6 @@ Deepfake and forged-media detection using computer-vision forensics.
 
 ---
 
-## 🚀 Installation & Usage  
-
 ### 🖥️ Web Version  
 ```bash
 git clone https://github.com/habiba-tech/CyberGuardApp.git
