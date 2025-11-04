@@ -9,8 +9,8 @@
 ![Cyber Guard Banner](assets/images/banner.png) <!-- Optional project banner -->
 
 [![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-f7df1e?style=for-the-badge&logo=javascript)](#)
-[![Material Design](https://img.shields.io/badge/UI-Material%20Design-3ddc84?style=for-the-badge&logo=android)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![HTML(https://img.shields.io/badge/UI-Material%20Design-3ddc84?style=for-the-badge&logo=android)](#)
+[![CCS (https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Yes-success?style=for-the-badge&logo=github)](#)
 
 ---
