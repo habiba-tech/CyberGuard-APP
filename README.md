@@ -33,20 +33,20 @@ It performs **toxic-text detection**, **advanced phishing analysis**, and **deep
 
 ## 🔍 Key Features  
 
-### 1️⃣ Securing Communications 🗣️  
+### 1️⃣ Abuse langauage 🗣️  
 Real-time detection of abusive or toxic messages using contextual NLP models that understand tone, intent, and semantics.  
 - Pragmatic language understanding  
 - Adaptive retraining to learn new slang or code words  
 - 10 000 + abusive instances successfully flagged  
 
-### 2️⃣ Fortifying Inboxes 📧  
-Phishing & email breach detection through composite AI feature vectors:  
+### 2️⃣ Phishing Email Dectection 📧  
+Phishing & email breach detection through composite AI analysis vectors:  
 - Header & sender anomaly analysis  
 - URL entropy scoring  
-- Content-similarity with phishing templates  
+- Content-similarity withphishingg templates  
 - Proactive breach alerts via API integration  
 
-### 3️⃣ Unmasking Deception 📸  
+### 3️⃣ AI Generated images detecting📸  
 Deepfake and forged-media detection using computer-vision forensics.  
 - Frame-consistency & liveness-signature analysis  
 - Detection of pixel-level manipulation artifacts  
