@@ -1,4 +1,4 @@
-# 🛡️ Cyber Guard App – AI-Powered Cybersecurity System  
+# 🛡️ Cyber Guard App 
 
 > 🔒 **Next-Generation AI Cybersecurity Platform**  
 > Developed by *Siddiqui Umme Habiba*
