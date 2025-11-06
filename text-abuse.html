@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Abuse Scan - CyberGuard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🛡️</span>
+                <span class="brand-text">CyberGuard</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="text-abuse.html" class="nav-link active">Text Scan</a>
+                <a href="phishing-detection.html" class="nav-link">Phishing</a>
+                <a href="ai-image-check.html" class="nav-link">AI Image</a>
+                <a href="email-breach.html" class="nav-link">Breach Check</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">🔍 Text Abuse Detection</h1>
+            <p class="page-subtitle">Analyze text content for toxicity, harassment, and inappropriate language</p>
+        </div>
+
+        <div class="scan-container">
+            <div class="input-section">
+                <label for="textInput" class="input-label">Enter text to analyze:</label>
+                <textarea 
+                    id="textInput" 
+                    class="text-input" 
+                    placeholder="Type or paste the text you want to analyze for potential abuse, toxicity, or inappropriate content..."
+                    rows="8"
+                ></textarea>
+                <button id="scanButton" class="scan-button">
+                    <span class="button-text">Analyze Text</span>
+                    <span class="button-icon">🔍</span>
+                </button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <div class="loading-spinner" id="loadingSpinner">
+                    <div class="spinner"></div>
+                    <p>Analyzing text...</p>
+                </div>
+                
+                <div class="results-content" id="resultsContent">
+                    <h3 class="results-title">Analysis Results</h3>
+                    <div class="toxicity-score" id="toxicityScore">
+                        <div class="score-label">Toxicity Score</div>
+                        <div class="score-value" id="scoreValue">0%</div>
+                        <div class="score-bar">
+                            <div class="score-fill" id="scoreFill"></div>
+                        </div>
+                    </div>
+                    <div class="verdict" id="verdict">
+                        <span class="verdict-label">Verdict:</span>
+                        <span class="verdict-value" id="verdictValue">Safe</span>
+                    </div>
+                    <div class="details" id="details">
+                        <h4>Detailed Analysis:</h4>
+                        <ul id="detailsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="text-abuse.js"></script>
+</body>
+</html>
