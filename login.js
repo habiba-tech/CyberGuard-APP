@@ -175,7 +175,7 @@ class LoginManager {
         const messageDiv = document.createElement('div');
         messageDiv.className = `login-message ${type}`;
         messageDiv.textContent = message;
-        
+         
         const loginForm = document.getElementById('loginForm');
         loginForm.insertBefore(messageDiv, loginForm.firstChild);
         
